@@ -1,6 +1,6 @@
 
 FROM centos:centos6
-MAINTAINER Yunsang Choi <oddpoet@gmail.com>
+MAINTAINER inblackhole <inblackhole@gmail.com>
 
 #=======================
 # Install utils
@@ -9,10 +9,10 @@ COPY install-default.sh install-default.sh
 RUN ["/bin/bash", "install-default.sh"]
 
 #=======================
-# Install JDK6
+# Install JDK7
 #=======================
-COPY install-jdk6.sh install-jdk6.sh 
-RUN ["/bin/bash", "install-jdk6.sh"]
+COPY install-jdk7.sh install-jdk7.sh 
+RUN ["/bin/bash", "install-jdk7.sh"]
 
 #=======================
 # Install CDH 4

@@ -3,8 +3,8 @@ HBase
 
 HBase docker image for dev pc. 
 
-* CDH version : cdh4
-* java : jdk6u45 (64bit)
+* CDH version : cdh4.3
+* java : jdk7u25 (64bit)
 * HBase mode : pseudo distributed 
 * Exposed port 
 	* zookeeper-server: 2181
@@ -48,14 +48,14 @@ Pull image
 -----------
 
 ```
-docker pull oddpoet/hbase-cdh4
+docker pull inblackhole/hbase-cdh4
 ```
 
 Run container 
 -------------
 
 ```
-docker run -p 2181:2181 -p 65000:65000 -p 65010:65010 -p 65020:65020 -p 65030:65030 -h $(hostname) -d oddpoet/hbase-cdh4
+docker run -p 2181:2181 -p 65000:65000 -p 65010:65010 -p 65020:65020 -p 65030:65030 -h $(hostname) -d inblackhole/hbase-cdh4
 ```
 
 
